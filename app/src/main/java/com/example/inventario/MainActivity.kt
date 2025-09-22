@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             InventarioTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "UMG",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
