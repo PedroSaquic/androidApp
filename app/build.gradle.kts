@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.inventario"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.inventario"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -44,9 +44,9 @@ android {
 }
 
 dependencies {
-    implementation("android.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation("android.lifecycle:lifecycle-livedata-ktx:2.7.0")
-    implementation("android.lifecycle:lifecycle-runtime-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
