@@ -34,14 +34,16 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen(vm: ProductViewModel){
     val product by vm.product.observeAsState(initial = Product("Producto inicial", 0.0f))
+    val nameColor by vm.nameColor.observeAsState(initial = 0xFF000000.toInt())
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ){
-        Text(text = "Nombre: ${product.name}")
-        Text(text = "Precio: ${product.price}")
+        Text(text = "Nombre: ${product.name}", color = androidx.compose.ui.graphics.Color(nameColor))
+        Text(text = "Precio: ${product.price}", color = androidx.compose.ui.graphics.Color(nameColor))
 
         Button(onClick = { vm.changeProduct()}){
             Text("Cambiar producto")

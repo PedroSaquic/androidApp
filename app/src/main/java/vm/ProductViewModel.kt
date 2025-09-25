@@ -11,6 +11,7 @@ class ProductViewModel : ViewModel() {
     private val _product = MutableLiveData(Product("Aufifonos", 21.99f))
     val product: LiveData<Product> get() = _product
 
+
     private val colors = listOf(
         0xFFE57373.toInt(),
         0xFF64B5F6.toInt(),
